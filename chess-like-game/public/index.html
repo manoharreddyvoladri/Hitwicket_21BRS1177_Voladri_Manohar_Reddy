@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess-like Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Chess-like Game</h1>
+        <div id="game-state"></div>
+        <div id="board" class="board"></div>
+        <div id="move-history">
+            <h2>Move History</h2>
+            <ul id="history-list"></ul>
+        </div>
+        <div id="piece-guide">
+            <h2>Piece Movement Guide</h2>
+            <ul>
+                <li>Pawn (P): Moves 1 step in any direction</li>
+                <li>Hero1 (H1): Moves 2 steps in any direction</li>
+                <li>Hero2 (H2): Moves 2 steps diagonally</li>
+                <li>Hero3 (H3): Moves 2 steps straight and 1 step to the side</li>
+            </ul>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

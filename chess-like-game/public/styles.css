@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+#game-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #4CAF50;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-gap: 1px;
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cell-A {
+    background-color: #d32f2f;
+}
+
+.cell-B {
+    background-color: #1976d2;
+}
+
+#move-history, #piece-guide {
+    background-color: #333;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#history-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#game-state {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
